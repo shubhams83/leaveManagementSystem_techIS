@@ -8,8 +8,8 @@ class Leave(models.Model):
         db_table = 'leave'
 
 
-    employee_id = models.ForeignKey(User, blank=False, null= False, db_index=True)
-    user_name = models.ForeignKey(User, blank=False, null=False, db_index=True)
+    # employee_id = models.ForeignKey(User, blank=False, null= False, db_index=True)
+    # user_name = models.ForeignKey(User, blank=False, null=False, db_index=True)
     leave_type = models.CharField('Leave Type', blank=False, null=False, default='N/A', choices=LEAVE_TYPE, max_length=50)
     from_date = models.DateTimeField('From Date', blank=False, null=False)
     to_date = models.DateTimeField('To Date', blank=False, null=False)
