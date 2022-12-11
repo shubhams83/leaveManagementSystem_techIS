@@ -11,8 +11,8 @@ class Leave(models.Model):
         db_table = 'leave'
 
 
-    # employee_id = models.ForeignKey(User, blank=False, null= False, db_index=True)
-    # user_name = models.ForeignKey(User, blank=False, null=False, db_index=True)
+    employee_id = models.CharField('Emp.Id:', blank=False, null= False, db_index=True)
+    user_name = models.CharField('Name', blank=False, null=False, db_index=True)
     leave_type = models.CharField('Leave Type', blank=False, null=False, default='N/A', choices=LEAVE_TYPE, max_length=50)
     from_date = models.DateTimeField('From Date', blank=False, null=False)
     to_date = models.DateTimeField('To Date', blank=False, null=False)
@@ -21,4 +21,4 @@ class Leave(models.Model):
     updated_at = models.DateTimeField('Updated Datetime', blank=False, auto_now=True)
 
     def __str__(self):
-        return self.name
+        return self.user_name
