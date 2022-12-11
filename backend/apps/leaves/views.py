@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def leave(request):
-    return HttpResponse("Hello! I am a leave")
+    return HttpResponse("Hello! I am a leave!")
