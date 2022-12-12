@@ -21,6 +21,7 @@ class Leave(models.Model):
     applied_to = MultiSelectField('Applied To', blank=False, null=False, default='N/A', choices=APPLIED_TO, max_length=500)
     created_at = models.DateTimeField('Created Datetime', blank=False, auto_now_add=True)
     updated_at = models.DateTimeField('Updated Datetime', blank=False, auto_now=True)
+    description = models.CharField('Notes', blank=False, null=False, db_index=True, max_length=400, default='Description & Responsibilities Assigned')
     leave_status = models.CharField('Leave Status', blank=False, null=False, default='N/A', choices=LEAVE_STATUS, max_length=30)
 
     def __str__(self):
