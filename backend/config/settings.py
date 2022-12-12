@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apps.leaves',
     'rest_framework',
     'rest_framework_simplejwt',
+    'multiselectfield'
 ]
 
 MIDDLEWARE = [

@@ -18,3 +18,15 @@ LEAVE_STATUS = (
     ('cancelled','Cancelled'),
 
 )
+APPLIED_TO = (
+    ('saravana_kumar','Saravana Kumar'),
+    ('rajeshwari','Rajeshwari'),
+    ('viswanath','Viswanath'),
+    ('shiva_ganesh','Shiva Ganesh'),
+    ('anshu_kumar','Anshu Kumar'),
+    ('aishwarya','Aishwarya'),
+    ('sajid','Sajid'),
+    ('prasanna','Prasanna'),
+    ('jithin','Jithin'),
+
+)

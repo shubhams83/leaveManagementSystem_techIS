@@ -2,8 +2,9 @@ from django.db import models
 
 # Create your models here.
 from django.db import models
+from multiselectfield import MultiSelectField
 # from apps.users.models import User
-from config.constants import LEAVE_TYPE , LEAVE_STATUS
+from config.constants import LEAVE_TYPE , LEAVE_STATUS, APPLIED_TO
 
 # Create your models here.
 class Leave(models.Model):
@@ -17,9 +18,11 @@ class Leave(models.Model):
     from_date = models.DateTimeField('From Date', blank=False, null=False)
     to_date = models.DateTimeField('To Date', blank=False, null=False)
     duration = models.IntegerField('Duration', blank=False, null=False,default=0)
+    applied_to = MultiSelectField('Applied To', blank=False, null=False, default='N/A', choices=APPLIED_TO, max_length=500)
     created_at = models.DateTimeField('Created Datetime', blank=False, auto_now_add=True)
     updated_at = models.DateTimeField('Updated Datetime', blank=False, auto_now=True)
     leave_status = models.CharField('Leave Status', blank=False, null=False, default='N/A', choices=LEAVE_STATUS, max_length=30)
 
     def __str__(self):
         return self.user_name
+
