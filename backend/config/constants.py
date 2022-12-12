@@ -24,9 +24,10 @@ APPLIED_TO = (
     ('viswanath','Viswanath'),
     ('shiva_ganesh','Shiva Ganesh'),
     ('anshu_kumar','Anshu Kumar'),
-    ('aishwarya','Aishwarya'),
-    ('sajid','Sajid'),
-    ('prasanna','Prasanna'),
-    ('jithin','Jithin'),
+    ('aishwarya','Aishwarya Shetty'),
+    ('sajid','Sajid Khurshid'),
+    ('prasanna','Prasanna Akash'),
+    ('jithin','Jithin Peter'),
+    ('nitesh','Nitesh Tiwari')
 
 )
