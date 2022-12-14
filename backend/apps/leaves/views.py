@@ -2,5 +2,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def leave(request):
+def leaves(request):
     return HttpResponse("Hello! I am a leave!")
